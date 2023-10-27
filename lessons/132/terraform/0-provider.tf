@@ -1,16 +1,16 @@
 locals {
-  project_id = "devops-367201" # TODO: replace project id
+  project_id = "stone-net-401613" # TODO: replace project id
 }
 
 provider "google" {
   project = local.project_id
-  region  = "us-central1"
+  region  = "us-central1-c"
 }
 
 # Only needed to enable managed prometheus
 provider "google-beta" {
   project = local.project_id
-  region  = "us-central1"
+  region  = "us-central1-c"
 }
 
 terraform {
